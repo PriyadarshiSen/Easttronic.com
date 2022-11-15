@@ -12,7 +12,8 @@
 
 <body class="text-stone-700 bg-white">
     <nav class="flex justify-between px-4 py-2">
-        <a href="" class="text-xl font-bold">Easttronic</a>
+        <a href=""
+            class="text-xl font-bold hover:text-yellow-500 hover:transition hover:ease-in-out hover:delay-150">Easttronic</a>
 
         <!-- Menu Items -->
         <div class="hidden md:block">
@@ -27,15 +28,16 @@
         </div>
 
         <!-- Hamburger Menu -->
-        <div class="md:hidden">
-            <img class="w-6 group cursor-pointer" src="./assets/menu.png" alt="" />
-            <div class="absolute hidden right-0 top-0">
+        <div class="md:hidden group">
+            <img class="w-6 cursor-pointer" src="./assets/menu.png" alt="" />
+            <div class="absolute right-0 top-0 hidden group-hover:block">
                 <ul class="bg-white p-10 text-center rounded-2xl">
                     <img class="w-6 absolute right-2 top-2" src="./assets/close.png" alt="" />
                     <li class="py-3 hover:text-stone-500"><a href="">About</a></li>
                     <li class="py-3 hover:text-stone-500"><a href="">Services</a></li>
                     <li class="py-3 hover:text-stone-500"><a href="">Team</a></li>
-                    <li class="px-3 my-3 border-2 rounded-full border-yellow-300 hover:bg-yellow-300">
+                    <li
+                        class="px-3 my-3 border-2 rounded-full border-yellow-300 hover:bg-yellow-300 transition ease-in-out delay-150">
                         <a href="">Contact</a>
                     </li>
                 </ul>
@@ -43,32 +45,42 @@
         </div>
     </nav>
 
-    <!--nav class="w-screen flex justify-center p-2 shadow-lg">
+    <!-- Main Contnent -->
+    <main class="">
+        <!-- Hero Section -->
+        <section class="w-screen bg-yellow-200 p-4">
+            <h1 class="text-4xl py-10 font-bold leading-snug">
+                Imagination to
+                <span class="bg-stone-700 text-yellow-200 px-2 pb-1">Innovation</span>
+            </h1>
+        </section>
 
-        <div class="flex justify-between align-middle w-screen md:w-5/6">
-            <div class="font-bold text-xl hover:text-yellow-400"><a href="">Practice</a></div>
+        <!-- Section 01 | About Us -->
+        <section class="w-screen p-4">
+            <h1 class="text-4xl py-10 font-bold">
+                What can we do for you ?
+            </h1>
 
-            <!- Hamburger Menu --
-            <div class="md:hidden cursor-pointer">
-                <img class="w-8" src="./assets/menu.png" alt="">
-            </div-->
-
-    <!-- Nav Menu --
-            <div class="hidden md:block">
-                <ul class="flex">
-                    <li><a class="mx-4 hover:text-stone-500" href="">About</a></li>
-                    <li><a class="mx-4 hover:text-stone-500" href="">Blog</a></li>
-                    <li><a class="mx-4 hover:text-stone-500" href="">Team</a></li>
-                    <li><a class="mx-4 border-2 border-yellow-300 hover:bg-yellow-300  rounded-full px-2 py-1"
-                            href="">Contact</a></li>
-                </ul>
+            <div class="grid grid-cols-2 mb-12 gap-4">
+                <p class="col-span-1 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <img class="col-span-1" src="./assets/pexels-lenin-estrada-2103864.jpg" alt="">
             </div>
 
-        </div>
-    </nav>
+            <div class="grid grid-cols-3 my-10 gap-4">
+                <img class="col-span-2" src="./assets/pexels-groundedgodess-6320167.jpg" alt="">
+                <p class="col-span-1 text-xl">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
 
+        <!-- Section 02 | Services -->
+        <section class="w-screen p-4">
+            <h1 class="text-4xl py-10 font-bold">
+                What can we do for you ?
+            </h1>
+        </section>
+    </main>
 
-    <main class="p-4">
+    <!--main class="p-4">
         <section class="flex justify-center items-center">
             <h1 class="text-5xl my-32 z-10">Imagination to Innovation</h1>
 
@@ -81,31 +93,12 @@
         </section>
     </main-->
 
-    <!--main class="p-4 bg-red-400">
-        <section class="w-screen flex justify-center items-center my-32 text-6xl font-semibold">
-            <div>Imagination to Innovation</div>
-
-            <div class="w-20 h-20 absolute left-8 top-12 border-4 border-yellow-300 rounded"></div>
-            <div class="w-40 h-40 absolute right-20 top-28 border-4 border-yellow-300 rounded"></div>
-            <div class="w-12 h-12 absolute left-20 top-28 border-4 border-yellow-300 rounded"></div>
-            <div class="w-12 h-12 absolute left-12 top-80 border-4 border-yellow-300 rounded"></div>
-        </section>
-    </main-->
-
     <footer class="">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-            <div class="col-span-1 p-8">
-                <h3>About</h3>
-            </div>
-            <div class="col-span-1 p-8">
-                <h3>Blog</h3>
-            </div>
-            <div class="col-span-1 p-8">
-                <h3>Team</h3>
-            </div>
-            <div class="col-span-1 p-8">
-                <h3>Contact</h3>
-            </div>
+            <div class="col-span-1 p-8"><h3>About</h3></div>
+            <div class="col-span-1 p-8"><h3>Blog</h3></div>
+            <div class="col-span-1 p-8"><h3>Team</h3></div>
+            <div class="col-span-1 p-8"><h3>Contact</h3></div>
         </div>
         <div class="grid grid-cols-3 w-screen text-sm bg-stone-300 p-1">
             <p class="col-span-2 text-left">

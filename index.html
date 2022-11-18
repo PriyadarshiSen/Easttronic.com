@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="./input.css" />
 </head>
 
+
+
 <body class="text-stone-700 bg-white">
+
     <nav class="flex justify-between px-4 py-2">
         <a href=""
             class="text-xl font-bold hover:text-yellow-500 hover:transition hover:ease-in-out hover:delay-150">Easttronic</a>
@@ -29,11 +32,11 @@
 
         <!-- Hamburger Menu -->
         <div class="md:hidden">
-            <img class="w-6 cursor-pointer" src="./assets/menu.png" alt="" onclick="myFunction()" />
+            <img class="w-6 cursor-pointer" src="./assets/menu.png" alt="" onclick="menuFunction()" />
 
-            <div class="hidden" id="myLinks">
+            <div class="hidden" id="hamburger">
                 <ul class="absolute right-0 top-0 bg-white p-10 text-center rounded-2xl">
-                    <img class="w-6 absolute right-4 top-2" src="./assets/close.png" alt="" onclick="myFunction()">
+                    <img class="w-6 absolute right-4 top-2" src="./assets/close.png" alt="" onclick="menuFunction()">
                     <li class="py-3 hover:text-stone-500"><a href="">About</a></li>
                     <li class="py-3 hover:text-stone-500"><a href="">Services</a></li>
                     <li class="py-3 hover:text-stone-500"><a href="">Team</a></li>
@@ -44,58 +47,36 @@
                 </ul>
             </div>
         </div>
-        
+
     </nav>
 
+
+
+
     <!-- Main Contnent -->
-    <main class="">
+    <main class="m-0">
         <!-- Hero Section -->
-        <section class="w-screen bg-yellow-200 p-4">
-            <h1 class="text-4xl py-10 font-bold leading-snug">
+        <section class="p-4 my-20">
+            <h1 class="text-6xl py-10 font-bold leading-snug md:text-center">
                 Imagination to
-                <span class="bg-stone-700 text-yellow-200 px-2 pb-1">Innovation</span>
+                <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block">
+                    <span class="relative text-white">Innovation</span>
+                </span>
             </h1>
         </section>
 
-        <!-- Section 01 | About Us -->
-        <section class="w-screen p-4">
-            <h1 class="text-4xl py-10 font-bold">
-                What can we do for you<span></span>?
-            </h1>
-
-            <div class="grid grid-cols-2 mb-12 gap-4">
-                <p class="col-span-1 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <img class="col-span-1" src="./assets/pexels-lenin-estrada-2103864.jpg" alt="">
-            </div>
-
-            <div class="grid grid-cols-3 my-10 gap-4">
-                <img class="col-span-2" src="./assets/pexels-groundedgodess-6320167.jpg" alt="">
-                <p class="col-span-1 text-2xl">Lorem ipsum dolor sit amet.</p>
-            </div>
+        
+        <!-- Section 02 | Services -->
+        <section class="p-4 my-20">
+            <h1 class="border-l-2 pl-4 text-4xl border-yellow-500">How May We Help You ?</h1>
         </section>
+
 
         <!-- Section 02 | Services -->
-        <section class="w-screen p-4">
-            <h1 class="text-4xl py-10 font-bold">
-                What does we serve?
-            </h1>
-        </section>
     </main>
 
-    <!--main class="p-4">
-        <section class="flex justify-center items-center">
-            <h1 class="text-5xl my-32 z-10">Imagination to Innovation</h1>
 
-            <div class="z-0">
-                <div class="w-20 h-20 absolute left-8 top-12 border-4 border-yellow-300 rounded"></div>
-                <div class="w-40 h-40 absolute right-20 top-28 border-4 border-yellow-300 rounded"></div>
-                <div class="w-12 h-12 absolute left-20 top-28 border-4 border-yellow-300 rounded"></div>
-                <div class="w-12 h-12 absolute left-12 top-80 border-4 border-yellow-300 rounded"></div>
-            </div>
-        </section>
-    </main-->
-
-    <footer class="">
+    <!--footer class="">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
             <div class="col-span-1 p-8">
                 <h3>About</h3>
@@ -118,12 +99,12 @@
                 Made by <span>Priyadarshi</span>
             </a>
         </div>
-    </footer>
+    </footer-->
 
     <!-- JS -->
     <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
+        function menuFunction() {
+            var x = document.getElementById("hamburger");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {

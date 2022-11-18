@@ -28,11 +28,12 @@
         </div>
 
         <!-- Hamburger Menu -->
-        <div class="md:hidden group">
-            <img class="w-6 cursor-pointer" src="./assets/menu.png" alt="" />
-            <div class="absolute right-0 top-0 hidden group-hover:block">
-                <ul class="bg-white p-10 text-center rounded-2xl">
-                    <img class="w-6 absolute right-2 top-2" src="./assets/close.png" alt="" />
+        <div class="md:hidden">
+            <img class="w-6 cursor-pointer" src="./assets/menu.png" alt="" onclick="myFunction()" />
+
+            <div class="hidden" id="myLinks">
+                <ul class="absolute right-0 top-0 bg-white p-10 text-center rounded-2xl">
+                    <img class="w-6 absolute right-4 top-2" src="./assets/close.png" alt="" onclick="myFunction()">
                     <li class="py-3 hover:text-stone-500"><a href="">About</a></li>
                     <li class="py-3 hover:text-stone-500"><a href="">Services</a></li>
                     <li class="py-3 hover:text-stone-500"><a href="">Team</a></li>
@@ -43,6 +44,7 @@
                 </ul>
             </div>
         </div>
+        
     </nav>
 
     <!-- Main Contnent -->
@@ -58,24 +60,24 @@
         <!-- Section 01 | About Us -->
         <section class="w-screen p-4">
             <h1 class="text-4xl py-10 font-bold">
-                What can we do for you ?
+                What can we do for you<span></span>?
             </h1>
 
             <div class="grid grid-cols-2 mb-12 gap-4">
-                <p class="col-span-1 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="col-span-1 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 <img class="col-span-1" src="./assets/pexels-lenin-estrada-2103864.jpg" alt="">
             </div>
 
             <div class="grid grid-cols-3 my-10 gap-4">
                 <img class="col-span-2" src="./assets/pexels-groundedgodess-6320167.jpg" alt="">
-                <p class="col-span-1 text-xl">Lorem ipsum dolor sit amet.</p>
+                <p class="col-span-1 text-2xl">Lorem ipsum dolor sit amet.</p>
             </div>
         </section>
 
         <!-- Section 02 | Services -->
         <section class="w-screen p-4">
             <h1 class="text-4xl py-10 font-bold">
-                What can we do for you ?
+                What does we serve?
             </h1>
         </section>
     </main>
@@ -95,10 +97,18 @@
 
     <footer class="">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-            <div class="col-span-1 p-8"><h3>About</h3></div>
-            <div class="col-span-1 p-8"><h3>Blog</h3></div>
-            <div class="col-span-1 p-8"><h3>Team</h3></div>
-            <div class="col-span-1 p-8"><h3>Contact</h3></div>
+            <div class="col-span-1 p-8">
+                <h3>About</h3>
+            </div>
+            <div class="col-span-1 p-8">
+                <h3>Blog</h3>
+            </div>
+            <div class="col-span-1 p-8">
+                <h3>Team</h3>
+            </div>
+            <div class="col-span-1 p-8">
+                <h3>Contact</h3>
+            </div>
         </div>
         <div class="grid grid-cols-3 w-screen text-sm bg-stone-300 p-1">
             <p class="col-span-2 text-left">
@@ -109,6 +119,18 @@
             </a>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

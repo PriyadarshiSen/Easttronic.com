@@ -8,17 +8,123 @@
     <title>Practice</title>
 
     <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 
 
 
-<body class="text-stone-700 bg-white">
+<body class="">
+
+    <nav class="bg-yellow-200 px-8 py-3 flex justify-between items-center fixed w-screen">
+        <!--div class="font-bold text-3xl">ET.</div-->
+        <div class="flex">
+            <img class="w-7" src="./assets/et.png" alt="">
+            <p class="px-1 text-xl flex items-center font-bold text-blue-900">EASTRONIC</p>
+        </div>
+
+        <div>
+            <ul class="flex items-center">
+                <li><a class="mx-3 hover:text-blue-900" href="">About</a></li>
+                <li><a class="mx-3 hover:text-blue-900" href="">Services</a></li>
+                <li><a class="mx-3 hover:text-blue-900" href="">Team</a></li>
+                <li><a class="mx-3 hover:bg-blue-900 hover:border-blue-900 border-2 hover:text-yellow-200 border-blue-900 py-1 px-3 rounded"
+                        href="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="p-8">
+        <section class="grid grid-cols-2">
+            <h1 class="text-7xl font-bold my-24 col-span-1">
+                Imagination <br />
+                to<br />
+                Innovation
+            </h1>
+            <video class="my-10 rounded" autoplay mute loop src="./assets/01.mp4"></video>
+        </section>
+        <section class="py-20">
+            <h3 class="text-6xl font-bold py-4">About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati molestiae sed odio ratione
+                voluptatem, provident quibusdam qui animi. Quasi voluptate impedit eveniet doloribus blanditiis
+                quibusdam placeat quia, molestias soluta quo, esse minus error at debitis obcaecati cupiditate culpa
+                eos laborum? Temporibus minima minus quae enim, numquam odit dolorum. Necessitatibus itaque quis
+                esse praesentium.</p>
+        </section>
+        <section class="py-20">
+            <h3 class="text-6xl font-bold py-4">Services</h3>
+            <div class="grid grid-cols-3">
+                <div class="col-span-1">
+                    <div class="bg-yellow-200 pt-40 p-4"></div>
+                    <div class="py-4">
+                        <p class="text-2xl">Product Name</p>
+                        <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+                            pariatur id nesciunt ea
+                            voluptate magni neque, fugiat dolorem itaque perferendis.</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="bg-yellow-100 pt-40 p-4"></div>
+                    <div class="py-4">
+                        <p class="text-2xl">Product Name</p>
+                        <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+                            pariatur id nesciunt ea
+                            voluptate magni neque, fugiat dolorem itaque perferendis.</p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="bg-yellow-200 pt-40 p-4"></div>
+                    <div class="py-4">
+                        <p class="text-2xl">Product Name</p>
+                        <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+                            pariatur id nesciunt ea
+                            voluptate magni neque, fugiat dolorem itaque perferendis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20">
+            <h3 class="text-6xl font-bold py-4">Query</h3>
+            <form class="flex flex-col w-fit" action="">
+                <label class="text-xl mt-4" for="name">Name</label>
+                <input class="border-2 border-gray-300 rounded px-2" type="text">
+
+                <label class="text-xl mt-4" for="name">Email</label>
+                <input class="border-2 border-gray-300 rounded px-2" type="email" name="" id="">
+
+                <label class="text-xl mt-4" for="name">Message</label>
+                <textarea class="border-2 border-gray-300 rounded px-2" name="msg" id="" cols="30" rows="4"></textarea>
+
+                <button class="my-4 px-1 py-2 text-xl bg-yellow-300 hover:bg-yellow-400 rounded"
+                    type="submit">Send</button>
+            </form>
+        </section>
+        <section class="py-20">
+            <h3 class="text-6xl font-bold py-4">Follow Us</h3>
+            <div class="py-4">
+                <a href=""><i class="mr-4 bi bi-facebook text-3xl text-blue-700 hover:text-blue-900"> facebook</i></a>
+                <a href=""><i class="mx-4 bi bi-instagram text-3xl text-purple-700 hover:text-purple-900"> instagram</i></a>
+                <a href=""><i class="mx-4 bi bi-twitter text-3xl text-sky-600 hover:text-sky-900"> twitter</i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-1 bg-yellow-200 flex justify-center align-middle">
+        <div>Copyright © 2022 Eastronic Pvt. Ltd. All rights reserved.</div>
+    </footer>
+</body>
+
+
+
+
+
+
+<!--body class="text-stone-700 bg-white">
 
     <nav class="flex justify-between px-4 py-2">
         <a href=""
             class="text-xl font-bold hover:text-yellow-500 hover:transition hover:ease-in-out hover:delay-150">Easttronic</a>
 
-        <!-- Menu Items -->
+        <-- Menu Items --
         <div class="hidden md:block">
             <ul class="flex justify-around">
                 <li class="pr-3 hover:text-stone-500"><a href="">About</a></li>
@@ -30,7 +136,7 @@
             </ul>
         </div>
 
-        <!-- Hamburger Menu -->
+        <-- Hamburger Menu --
         <div class="md:hidden">
             <img class="w-6 cursor-pointer" src="./assets/menu.png" alt="" onclick="menuFunction()" />
 
@@ -53,9 +159,9 @@
 
 
 
-    <!-- Main Contnent -->
+    <-- Main Contnent --
     <main class="m-0">
-        <!-- Hero Section -->
+        <-- Hero Section --
         <section class="p-4 my-20">
             <h1 class="text-6xl py-10 font-bold leading-snug md:text-center">
                 Imagination to
@@ -66,17 +172,17 @@
         </section>
 
         
-        <!-- Section 02 | Services -->
+        <-- Section 02 | Services --
         <section class="p-4 my-20">
             <h1 class="border-l-2 pl-4 text-4xl border-yellow-500">How May We Help You ?</h1>
         </section>
 
 
-        <!-- Section 02 | Services -->
-    </main>
+        <-- Section 02 | Services --
+    </main-->
 
 
-    <!--footer class="">
+<!--footer class="">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
             <div class="col-span-1 p-8">
                 <h3>About</h3>
@@ -101,17 +207,17 @@
         </div>
     </footer-->
 
-    <!-- JS -->
-    <script>
-        function menuFunction() {
-            var x = document.getElementById("hamburger");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+<!-- JS -->
+<script>
+    function menuFunction() {
+        var x = document.getElementById("hamburger");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
-    </script>
+    }
+</script>
 </body>
 
 </html>
